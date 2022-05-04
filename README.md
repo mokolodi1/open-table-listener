@@ -17,7 +17,7 @@ First, grab the network call from Open Table using the following method.
 
 ![Screenshot showing how to capture the network call that we'll use here](grab_curl_from_open_table.png)
 
-Copy that cURL command into `open_table_curl.sh` 
+Copy that cURL command into `open_table_curl.sh`. This is in a separte file in order to not reveal my cookies to GitHub.
 
 ## Usage
 
