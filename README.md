@@ -24,7 +24,7 @@ Copy that cURL command into `open_table_curl.sh`. This is in a separte file in o
 Launch the following command in a `tmux` window to ensure it keeps running when `ssh` window is closed.
 
 ```
-FROM_SMS_NUMBER="+1831XXXXXXX" TO_SMS_NUMBER="+1609XXXXXXX" SMS_MESSAGE="https://www.opentable.com/gjelina" TWILIO_SID="XXX" TWILIO_AUTH="XXX" watch -n 60 ./text_if_open_table_changed.sh
+FROM_SMS_NUMBER="+1831XXXXXXX" TO_SMS_NUMBER="+1609XXXXXXX" SMS_MESSAGE="https://www.opentable.com/gjelina" TWILIO_SID="XXX" TWILIO_AUTH_TOKEN="XXX" watch -n 60 ./text_if_open_table_changed.sh
 ```
 
 ### Variables
