@@ -24,12 +24,12 @@ Copy that cURL command into `open_table_curl.sh`. This is in a separte file in o
 Launch the following command in a `tmux` window to ensure it keeps running when `ssh` window is closed.
 
 ```
-SMS_NUMBER="+1609XXXXXXX" SMS_MESSAGE="https://www.opentable.com/gjelina" TWILIO_SID="XXX" TWILIO_AUTH="XXX" watch -n 60 ./text_if_open_table_changed.sh
+FROM_SMS_NUMBER="+1831XXXXXXX" TO_SMS_NUMBER="+1609XXXXXXX" SMS_MESSAGE="https://www.opentable.com/gjelina" TWILIO_SID="XXX" TWILIO_AUTH="XXX" watch -n 60 ./text_if_open_table_changed.sh
 ```
 
 ### Variables
 
-`SMS_NUMBER` is the number you'd like to text.
+`FROM_SMS_NUMBER` and `TO_SMS_NUMBER` are the numbers you'd like to text from and to (your Twilio number and your own phone number respectively).
 
 `SMS_MESSAGE` is the message that will be sent.
 
